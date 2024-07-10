@@ -4,9 +4,9 @@
 
 ## Original BlueRetro docs that apply to the BRX adapter
 * [3 - Pairing Bluetooth controller](https://github.com/darthcloud/BlueRetro/wiki#3---pairing-bluetooth-controller)
-  * [Controller List & Pairing Guide](Controller-pairing-guide)
+  * [Controller List & Pairing Guide](https://github.com/darthcloud/BlueRetro/wiki/Controller-pairing-guide)
 * [4 - Web config](https://github.com/darthcloud/BlueRetro/wiki#4---web-config) <-- Note: ignore the BLE OTA FW Update section, follow the FW update over Wi-Fi section below.
-  * [BlueRetro BLE Web Config User Manual](BlueRetro-BLE-Web-Config-User-Manual)
+  * [BlueRetro BLE Web Config User Manual](https://github.com/darthcloud/BlueRetro/wiki/BlueRetro-BLE-Web-Config-User-Manual)
 * [5 - Physical buttons usage](https://github.com/darthcloud/BlueRetro/wiki#5---physical-buttons-usage)
 * [6 - Button combinations functions](https://github.com/darthcloud/BlueRetro/wiki#6---button-combinations-functions)
   * [BlueRetro mapping reference](https://docs.google.com/spreadsheets/d/e/2PACX-1vT9rPK2__komCjELFpf0UYz0cMWwvhAXgAU7C9nnwtgEaivjsh0q0xeCEiZAMA-paMrneePV7IqdX48/pubhtml)
