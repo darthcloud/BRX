@@ -43,3 +43,17 @@
 3. Hold the BRX dongle button and simultaneously power on the Xbox console.
 4. Keep holding the button for around 8 second and then release it.
 5. Once done it will reboot and the LED will be pulsing to indicate it's in paring mode.
+
+## Updating the Wi-Fi configuration for FW update
+* After 5 failed connection attempt the setting will be reset and will be reconfigurable via the Espressif app.
+* Alternatively you can also factory reset the BRX adapter.
+
+## I don't want to/can't use either of the phone apps.
+It's possible to configure the Wi-Fi using a PC with Wi-Fi and a python scripts.
+
+**DOCS TBD**
+
+## I don't want to/can't let the dongle access the Internet
+It's possible to configure the Wi-Fi using a PC with Wi-Fi and a python scripts and to set a local web server.
+
+**DOCS TBD**
