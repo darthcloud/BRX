@@ -24,7 +24,7 @@
 3. Hold the BRX dongle button and simultaneously power on the Xbox console.
 4. Once power is on release the BRX dongle button.  
 5. While the dongle try to connect to Wi-Fi the LED will be solid ON with two quick OFF blink every second until it connect.
-6. If Wi-Fi is configured already skip to step X.
+6. If Wi-Fi is configured already skip to step 12.
 7. If Wi-Fi is not yet configure on the BRX dongle the adapter will stay at that state until your configure it.
 8. Install the Espressif Soft-AP provisionning App on your phone.\
    Apple: https://apps.apple.com/cn/app/esp-softap-provisioning/id1474040630 \
