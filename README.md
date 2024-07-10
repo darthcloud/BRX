@@ -1,5 +1,7 @@
 # BRX BETA DOCS
 
+![](static/BRX_green_shadow_blk.png)
+
 ## Original BlueRetro docs that apply to the BRX adapter
 * [3 - Pairing Bluetooth controller](https://github.com/darthcloud/BlueRetro/wiki#3---pairing-bluetooth-controller)
   * [Controller List & Pairing Guide](Controller-pairing-guide)
