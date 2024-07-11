@@ -62,4 +62,7 @@ It's possible to configure the Wi-Fi using a PC with Wi-Fi and a python scripts 
    ```
 3. Run `sudo udevadm control --reload`
 4. Connect adapter to PC, it should now be using the xpad driver.
-   
+
+## Support BRX with MiSTerFPGA
+Follow the instruction in this repo:
+https://github.com/darthcloud/MiSTer_BRX
