@@ -38,7 +38,7 @@
 1. Turn your Xbox console off.
 2. Connect the BRX dongle into one of the controller slots.
 3. Hold the BRX dongle button and simultaneously power on the Xbox console. Keep holding the button for around 8 seconds and then release it.
-4. Once done, the dongle will reboot and the LED will be pulsing to indicate it's in paring mode.
+4. Once done, the dongle will reboot and the LED will be pulsing to indicate it's in Bluetooth paring mode.
 
 ## Updating the Wi-Fi configuration for FW update
 * After 5 failed Wi-Fi connection attempts, the Wi-Fi settings will be reset and will be reconfigurable via the Espressif app.
