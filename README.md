@@ -53,3 +53,13 @@ It's possible to configure the Wi-Fi using a PC with Wi-Fi and a python scripts.
 It's possible to configure the Wi-Fi using a PC with Wi-Fi and a python scripts and to set a local web server.
 
 **DOCS TBD**
+
+## Support BRX with linux's xpad driver
+1. Disconnect BRX dongle from PC.
+2. Crete a file named `/etc/udev/rules.d/98-brx.rules` and add the following content to it:
+   ```
+   ACTION=="add", ATTRS{idVendor}=="303A", ATTRS{idProduct}=="81EB", RUN+="/sbin/modprobe xpad" RUN+="/bin/sh -c 'echo 303A 81EB > /sys/bus/usb/drivers/xpad/new_id'"
+   ```
+3. Run `sudo udevadm control --reload`
+4. Connect adapter to PC, it should now be using the xpad driver.
+   
