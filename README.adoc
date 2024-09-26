@@ -1,0 +1,215 @@
+= BRX Dongle for OG XBOX documentation
+:toc: auto
+
+image::static/BRX_green_shadow_blk.png[]
+
+== Original BlueRetro docs that apply to the BRX adapter
+
+* https://github.com/darthcloud/BlueRetro/wiki#3---pairing-bluetooth-controller[3 - Pairing Bluetooth controller]
+ ** https://github.com/darthcloud/BlueRetro/wiki/Controller-pairing-guide[Controller List & Pairing Guide]
+
+== BRX dongle default buttons mapping
+
+[cols="1,1,1,3"]
+|===
+| BT XBOX | BT PlayStation | BT Nintendo | OG XBOX
+
+| A
+| X
+| B
+| A
+
+| B
+| O
+| A
+| B
+
+| X
+| Square
+| Y
+| X
+
+| Y
+| Triangle
+| X
+| Y
+
+| LB
+| L1
+| L
+| WHITE
+
+| RB
+| R1
+| R
+| BLACK
+
+| LT
+| L2
+| ZL
+| L
+
+| RT
+| R2
+| ZR
+| R
+
+| MENU
+| OPTIONS
+| +
+| START
+
+| VIEW
+| SHARE
+| -
+| BACK
+
+| XBOX 
+| PS
+| HOME
+| Enter/Exit BRX Virtual menu
+
+| SHARE
+| Touchpad click
+| Capture
+| L + R + BACK + START combo
+
+|===
+
+== BRX dongle virtual menu
+
+Your BRX dongle can be configured using a virtual menu operated by the connected controller.
+
+=== Entering the virtual menu
+
+. Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller. 
+. You will feel a short rumble feedback on BT controller who's rumble features is supported by BRX.
+. The BRX dongle LED will turn ON to indicate you are in the menu.
+
+=== Exiting the virtual menu
+
+. Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller at any step to exit the menu.
+. You will feel a longer rumble feedback on BT controller who's rumble features is supported by BRX.
+. The BRX dongle LED will turn OFF to indicate you have exited the menu.
+
+=== Selecting one of the 4 custom mapping banks
+
+. Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller to enter the menu.
+. On the DPAD press either UP, LEFT, RIGHT or DOWN for selecting either of the 4 custom mapping banks. (UP is selected by default)
+. The BRX dongle will exit the menu automatically.
+
+=== Remapping a button or axis direction in the current mapping bank
+
+. Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller to enter the menu.
+. Press the (*START* | [green]#*MENU*# | [blue]#*OPTIONS*# | [red]#*+*#) button of your controller to enter the remapping mode.
+. Press the *button* or *axis direction* on your BT controller that you want to modify it's OG XBOX function.
+. Press the *button* or *axis direction* that physically parallel the location of the OG XBOX *button* or *axis direction* you want to assign. +
+The *WHITE* button parallel to the ([green]#*LB*# | [blue]#*L1*# | [red]#*L*#) button. +
+The *BLACK* button parallel to the ([green]#*RB*# | [blue]#*R1*# | [red]#*R*#) button.
+. The BRX dongle will exit the menu automatically.
+
+=== Reverting a custom mapping bank to default
+
+. Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller to enter the menu.
+. Press any of the trigger ([green]#*LT | LB | RT | RB*# | [blue]#*L2 | L1 | R2 | R1*# | [red]#*ZL | L | ZR | R*#) buttons of your controller to reset to default the currently active custom mapping bank.
+. The BRX dongle will exit the menu automatically.
+
+=== Configuring Autofire on a btn or axis direction
+
+. Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller to enter the menu.
+. Press the (*SELECT* | [green]#*VIEW*# | [blue]#*SHARE*# | [red]#*-*#) button of your controller to enter the autofire configuration mode.
+. You can freely press on any buttons or axis directions to toggle between 3 autofire speeds and disable. +
+After each press the BRX dongle LED will flash accordingly to the currently set autofire speed. (Solid ON meaning autofire disable)
+. Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button again to exit the autofire configuration mode.
+
+=== Enabling & Disabling rumble feedback
+
+. Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller to enter the menu.
+. Press the ([green]#*X*# | [blue]#*Square*# | [red]#*Y*#) button of your controller to toggle the current rumble feedback configuration between enable and disable.
+. The BRX dongle will exit the menu automatically.
+
+=== Disconnecting the BT controller from the dongle
+
+. Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller to enter the menu.
+. Press the ([green]#*A*# | [blue]#*X*# | [red]#*B*#) button of your controller to disconnect your controller from the dongle.
+. The BRX dongle will exit the menu automatically.
+
+=== Enabling & Disabling BT pairing mode while controller connected
+
+. Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller to enter the menu.
+. Press the ([green]#*B*# | [blue]#*O*# | [red]#*A*#) button of your controller to toggle BT pairing mode between enable and disable.
+. The BRX dongle will exit the menu automatically.
+
+=== Joysticks & Triggers neutral position calibration
+
+Only use this if your controller joysticks or triggers are off center due to wear.
+
+. Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller to enter the menu.
+. Leave the joysticks and triggers in their neutral position.
+. Press the ([green]#*Y*# | [blue]#*Triangle*# | [red]#*X*#) button of your controller to calibrate the joysticks and triggers neutral position.
+. The BRX dongle will exit the menu automatically.
+
+== BRX dongle button usages
+
+After you powered the system you can use the button on the BRX dongle as follow:
+
+* Quick press: Bluetooth controller is disconnected from the BRX dongle.
+* 3 seconds press: The BRX dongle config is reset to default.
+
+== Firmware Update over Wi-Fi
+
+. Turn your Xbox console off.
+. Connect the BRX dongle into one of the controller slots.
+. Hold the BRX dongle button and simultaneously power on the Xbox console. Once the power is on, release the BRX dongle button.
+. The LED on the dongle will be solid ON and do two quick OFF blinks every second, indicating it is attempting to connect to Wi-Fi.
+. If Wi-Fi is configured already, skip to step 10.
+. If Wi-Fi is not yet configured on the BRX dongle, the adapter will stay in the blinking state until you configure it.
+. Install the Espressif "Soft-AP" provisioning App on your phone. +
+Apple: https://apps.apple.com/cn/app/esp-softap-provisioning/id1474040630 +
+Android: https://github.com/espressif/esp-idf-provisioning-android/releases
+. Scan the following QR code within the Espressif App. +
+image:static/xbox_qr_code.png[]
+. Once the app is connected to the dongle, select the Wi-Fi Network you want to connect to and enter the password for the network.
+. Once connected, the LED pattern will change to two quick ON blinks every second.
+. Once completed, the dongle will reboot and the LED will be pulsing to indicate it's in Bluetooth paring mode.
+
+== Factory reset
+
+. Turn your Xbox console off.
+. Connect the BRX dongle into one of the controller slots.
+. Hold the BRX dongle button and simultaneously power on the Xbox console. Keep holding the button for around 8 seconds and then release it.
+. Once done, the dongle will reboot and the LED will be pulsing to indicate it's in Bluetooth paring mode.
+
+== Updating the Wi-Fi configuration for FW update
+
+* After 5 failed Wi-Fi connection attempts, the Wi-Fi settings will be reset and will be reconfigurable via the Espressif app.
+* Alternatively, you can also factory reset the BRX adapter.
+
+== I don't want to/can't use either of the phone apps.
+
+It's possible to configure the Wi-Fi using a PC with Wi-Fi and a python scripts.
+
+*DOCS TBD*
+
+== I don't want to/can't let the dongle access the Internet
+
+It's possible to configure the Wi-Fi using a PC with Wi-Fi and a python scripts and to set a local web server.
+
+*DOCS TBD*
+
+== Support BRX with linux's xpad driver
+
+. Disconnect BRX dongle from PC.
+. Create a file named `/etc/udev/rules.d/98-brx.rules` and add the following content to it:
++
+----
+ACTION=="add", ATTRS{idVendor}=="303A", ATTRS{idProduct}=="81EB", RUN+="/sbin/modprobe xpad" RUN+="/bin/sh -c 'echo 303A 81EB > /sys/bus/usb/drivers/xpad/new_id'"
+----
+
+. Run `sudo udevadm control --reload`
+. Connect adapter to PC, it should now be using the xpad driver.
+
+== Support BRX with MiSTerFPGA
+
+Follow the instruction in this repo:
+https://github.com/darthcloud/MiSTer_BRX
