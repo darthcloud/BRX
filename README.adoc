@@ -149,6 +149,30 @@ Only use this if your controller joysticks or triggers are off center due to wea
 . Press the ([green]#*Y*# | [blue]#*Triangle*# | [red]#*X*#) button of your controller to calibrate the joysticks and triggers neutral position.
 . The BRX dongle will exit the menu automatically.
 
+== Advance config vis BLE Web interface
+
+BRX dongle custom mappings can be configured via the BLE Web config.
+This interface allow to configure a few extra settings.
+
+Acces this interface using the following address:
+https://darthcloud.github.io/brxWebCfg/
+
+Up to 48 mapping can be added in each mapping bank. Simply click on +/- buttons to add or remove a mapping. You can use the Src label to select the actual BT controller type you are currently mapping using. The labels selection is only to help you and has no effect on the config at all.
+
+The Select mapping bank dropbox let you select the active mappig bank for which the setting will be saved to. You need to save for each modified device mapping setting.
+
+For each mapping you can configure various options which might or not be used base on what the source and destination end up to be a button or an axis and vice versa.
+
+If all you want to do is a simple button remapping, all you need to touch is the src and dest colums, leave everything else to default value.
+
+Src: This is the source button/axis on the Bluetooth controller
+Dest: This is the destination button/axis on the wired interface.
+Max: If source & destination is an axis then this is the scaling factor base on the destination maximum.
+If source is a button & destination is an axis then this is the value base on destination maximum that the axis will be set.
+Threshold: If source is an axis and destination is a button, this is the threshold requires on the source axis before the button is pressed.
+Deadzone: This is the axis dead zone around reset value.
+Turbo: Turbo function base on the system frame rate.
+
 == BRX dongle button usages
 
 After you powered the system you can use the button on the BRX dongle as follow:
