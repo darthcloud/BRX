@@ -149,7 +149,7 @@ Only use this if your controller joysticks or triggers are off center due to wea
 . Press the ([green]#*Y*# | [blue]#*Triangle*# | [red]#*X*#) button of your controller to calibrate the joysticks and triggers neutral position.
 . The BRX dongle will exit the menu automatically.
 
-== Advance config vis BLE Web interface
+== Advance config via the BLE Web interface
 
 BRX dongle custom mappings can be configured via the BLE Web config.
 This interface allow to configure a few extra settings.
