@@ -157,7 +157,7 @@ This interface allow to configure a few extra settings.
 Acces this interface using the following address:
 https://darthcloud.github.io/brxWebCfg/
 
-Up to 48 mapping can be added in each mapping bank. Simply click on +/- buttons to add or remove a mapping. You can use the Src label to select the actual BT controller type you are currently mapping using. The labels selection is only to help you and has no effect on the config at all.
+Up to 48 mapping can be added in each mapping bank. Simply click on +/- buttons to add or remove a mapping. You can use the Src label to select the actual BT controller type you are currently using. The labels selection is only here to help you make the mapping selection and has no effect on the config otherwise.
 
 The Select mapping bank dropbox let you select the active mappig bank for which the setting will be saved to. You need to save for each modified device mapping setting.
 
