@@ -165,13 +165,13 @@ For each mapping you can configure various options which might or not be used ba
 
 If all you want to do is a simple button remapping, all you need to touch is the src and dest colums, leave everything else to default value.
 
-Src: This is the source button/axis on the Bluetooth controller
-Dest: This is the destination button/axis on the wired interface.
-Max: If source & destination is an axis then this is the scaling factor base on the destination maximum.
+* Src: This is the source button/axis on the Bluetooth controller
+* Dest: This is the destination button/axis on the wired interface.
+* Max: If source & destination is an axis then this is the scaling factor base on the destination maximum. +
 If source is a button & destination is an axis then this is the value base on destination maximum that the axis will be set.
-Threshold: If source is an axis and destination is a button, this is the threshold requires on the source axis before the button is pressed.
-Deadzone: This is the axis dead zone around reset value.
-Turbo: Turbo function base on the system frame rate.
+* Threshold: If source is an axis and destination is a button, this is the threshold requires on the source axis before the button is pressed.
+* Deadzone: This is the axis dead zone around reset value.
+* Turbo: Turbo function base on the system frame rate.
 
 == BRX dongle button usages
 
