@@ -67,7 +67,7 @@ image::static/BRX_green_shadow_blk.png[]
 | XBOX 
 | PS
 | HOME
-| Enter/Exit BRX Virtual menu
+| Enter/Exit BRX virtual menu
 
 | SHARE
 | Touchpad click
@@ -83,29 +83,27 @@ Your BRX dongle can be configured using a virtual menu operated by the connected
 === Entering the virtual menu
 
 . Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller. 
-. You will feel a short rumble feedback on BT controller who's rumble features is supported by BRX.
+. You will feel a short rumble feedback on a BT controller whose rumble features are supported by BRX.
 . The BRX dongle LED will turn ON to indicate you are in the menu.
 
 === Exiting the virtual menu
 
-. Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller at any step to exit the menu.
-. You will feel a longer rumble feedback on BT controller who's rumble features is supported by BRX.
+. Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller at any step to save changes and exit the menu.
+. You will feel a longer rumble feedback on a BT controller whose rumble features are supported by BRX.
 . The BRX dongle LED will turn OFF to indicate you have exited the menu.
 
 === Selecting one of the 4 custom mapping banks
 
 . Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller to enter the menu.
-. On the DPAD press either UP, LEFT, RIGHT or DOWN for selecting either of the 4 custom mapping banks. (UP is selected by default)
+. On the DPAD, press either UP, LEFT, RIGHT or DOWN to select one of the 4 custom mapping banks. (UP is selected by default)
 . The BRX dongle will exit the menu automatically.
 
 === Remapping a button or axis direction in the current mapping bank
 
 . Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller to enter the menu.
 . Press the (*START* | [green]#*MENU*# | [blue]#*OPTIONS*# | [red]#*+*#) button of your controller to enter the remapping mode.
-. Press the *button* or *axis direction* on your BT controller that you want to modify it's OG XBOX function.
-. Press the *button* or *axis direction* that physically parallel the location of the OG XBOX *button* or *axis direction* you want to assign. +
-The *WHITE* button parallel to the ([green]#*LB*# | [blue]#*L1*# | [red]#*L*#) button. +
-The *BLACK* button parallel to the ([green]#*RB*# | [blue]#*R1*# | [red]#*R*#) button.
+. Press the *button* or *axis direction* you want to change the action of. 
+. Press the *button* or *axis direction* whose action you want it to perform.
 . The BRX dongle will exit the menu automatically.
 
 === Reverting a custom mapping bank to default
@@ -114,18 +112,18 @@ The *BLACK* button parallel to the ([green]#*RB*# | [blue]#*R1*# | [red]#*R*#) b
 . Press any of the trigger ([green]#*LT | LB | RT | RB*# | [blue]#*L2 | L1 | R2 | R1*# | [red]#*ZL | L | ZR | R*#) buttons of your controller to reset to default the currently active custom mapping bank.
 . The BRX dongle will exit the menu automatically.
 
-=== Configuring Autofire on a btn or axis direction
+=== Configuring autofire on a button or axis direction
 
 . Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller to enter the menu.
 . Press the (*SELECT* | [green]#*VIEW*# | [blue]#*SHARE*# | [red]#*-*#) button of your controller to enter the autofire configuration mode.
-. You can freely press on any buttons or axis directions to toggle between 3 autofire speeds and disable. +
-After each press the BRX dongle LED will flash accordingly to the currently set autofire speed. (Solid ON meaning autofire disable)
+. Press a button to enable autofire. Press it again or UP/DOWN on the DPAD or thumbsticks to toggle between 3 autofire speeds and disabled. +
+After each press the BRX dongle LED will flash accordingly to the currently set autofire speed. (Solid ON meaning autofire is disabled)
 . Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button again to exit the autofire configuration mode.
 
-=== Enabling & Disabling rumble feedback
+=== Enabling & disabling rumble feedback
 
 . Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller to enter the menu.
-. Press the ([green]#*X*# | [blue]#*Square*# | [red]#*Y*#) button of your controller to toggle the current rumble feedback configuration between enable and disable.
+. Press the ([green]#*X*# | [blue]#*Square*# | [red]#*Y*#) button of your controller to toggle the current rumble feedback configuration between enabled and disabled.
 . The BRX dongle will exit the menu automatically.
 
 === Disconnecting the BT controller from the dongle
@@ -137,7 +135,7 @@ After each press the BRX dongle LED will flash accordingly to the currently set 
 === Enabling & Disabling BT pairing mode while controller connected
 
 . Press the ([green]#*XBOX*# | [blue]#*PS*# | [red]#*Home*#) button of your controller to enter the menu.
-. Press the ([green]#*B*# | [blue]#*O*# | [red]#*A*#) button of your controller to toggle BT pairing mode between enable and disable.
+. Press the ([green]#*B*# | [blue]#*O*# | [red]#*A*#) button of your controller to toggle BT pairing mode between enabled and disabled.
 . The BRX dongle will exit the menu automatically.
 
 === Joysticks & Triggers neutral position calibration
@@ -152,30 +150,30 @@ Only use this if your controller joysticks or triggers are off center due to wea
 == Advance config via the BLE Web interface
 
 BRX dongle custom mappings can be configured via the BLE Web config.
-This interface allow to configure a few extra settings.
+This interface allows you to configure a few extra settings.
 
-Acces this interface using the following address:
+Pair the BRX dongle to a device and access this interface using the following address:
 https://darthcloud.github.io/brxWebCfg/
 
-Up to 48 mapping can be added in each mapping bank. Simply click on +/- buttons to add or remove a mapping. You can use the Src label to select the actual BT controller type you are currently using. The labels selection is only here to help you make the mapping selection and has no effect on the config otherwise.
+Up to 48 mappings can be added in each mapping bank. Simply click on +/- buttons to add or remove a mapping. You can use the Src label to select the actual BT controller type you are currently using. The labels selection is only to help you make the mapping selection and has no effect on the config otherwise.
 
-The Select mapping bank dropbox let you select the active mappig bank for which the setting will be saved to. You need to save for each modified device mapping setting.
+The "Select mapping bank" drop-down menu lets you select the active mapping bank for which the setting will be saved to. You need to save for each modified device mapping setting.
 
-For each mapping you can configure various options which might or not be used base on what the source and destination end up to be a button or an axis and vice versa.
+For each mapping, you can configure various options which may or may not be used based on what the source and destination for a button or an axis are and vice versa.
 
-If all you want to do is a simple button remapping, all you need to touch is the src and dest colums, leave everything else to default value.
+If all you want to do is a simple button remapping, all you need to touch is the Src and Dest columns. Leave everything else as the default value.
 
 * Src: This is the source button/axis on the Bluetooth controller
 * Dest: This is the destination button/axis on the wired interface.
-* Max: If source & destination is an axis then this is the scaling factor base on the destination maximum. +
-If source is a button & destination is an axis then this is the value base on destination maximum that the axis will be set.
-* Threshold: If source is an axis and destination is a button, this is the threshold requires on the source axis before the button is pressed.
-* Deadzone: This is the axis dead zone around reset value.
-* Turbo: Turbo function base on the system frame rate.
+* Max: If source & destination is an axis, then this is the scaling factor based on the destination maximum. +
+If source is a button & destination is an axis, then this is the value based on destination axis maximum.
+* Threshold: If source is an axis and destination is a button, this is the threshold required on the source axis before the button is pressed.
+* Deadzone: This is the axis dead zone around the reset value.
+* Turbo: Turbo function based on the system frame rate.
 
 == BRX dongle button usages
 
-After you powered the system you can use the button on the BRX dongle as follow:
+After you powered the system on, you can use the button on the BRX dongle as follow:
 
 * Quick press: Bluetooth controller is disconnected from the BRX dongle.
 * 3 seconds press: The BRX dongle config is reset to default.
@@ -211,13 +209,13 @@ image:static/xbox_qr_code.png[]
 
 == I don't want to/can't use either of the phone apps.
 
-It's possible to configure the Wi-Fi using a PC with Wi-Fi and a python scripts.
+It's possible to configure the Wi-Fi using a PC with Wi-Fi and a python script.
 
 *DOCS TBD*
 
 == I don't want to/can't let the dongle access the Internet
 
-It's possible to configure the Wi-Fi using a PC with Wi-Fi and a python scripts and to set a local web server.
+It's possible to configure the Wi-Fi using a PC with Wi-Fi and a python script and to set a local web server.
 
 *DOCS TBD*
 
@@ -231,9 +229,9 @@ ACTION=="add", ATTRS{idVendor}=="303A", ATTRS{idProduct}=="81EB", RUN+="/sbin/mo
 ----
 
 . Run `sudo udevadm control --reload`
-. Connect adapter to PC, it should now be using the xpad driver.
+. Connect adapter to PC. It should now be using the xpad driver.
 
 == Support BRX with MiSTerFPGA
 
-Follow the instruction in this repo:
+Follow the instructions in this repo:
 https://github.com/darthcloud/MiSTer_BRX
