@@ -149,11 +149,11 @@ Only use this if your controller joysticks or triggers are off center due to wea
 
 == Advance config via the BLE Web interface
 
-BRX dongle custom mappings can be configured via the BLE Web config.
-This interface allows you to configure a few extra settings.
+BRX dongle custom mappings can be configured via the BLE Web config. This interface allows you to configure a few extra settings from a phone or Bluetooth-capable PC.
 
-Pair the BRX dongle to a device and access this interface using the following address:
-https://darthcloud.github.io/brxWebCfg/
+* Visit this address and click the "Connect BRX" button to open a Bluetooth device pairing menu. Select the BRX from the device list and click "Pair" to access to configuration menu.
+  https://darthcloud.github.io/brxWebCfg/
+* Note: If the Bluetooth device pairing menu does not open and you are using a Chromium-based browser, open a new browser tab and enter `chrome://flags`, search for "Web Bluetooth API", and set the option to Enabled. At this time, it appears that Firefox does not have an option to access Bluetooth devices.
 
 Up to 48 mappings can be added in each mapping bank. Simply click on +/- buttons to add or remove a mapping. You can use the Src label to select the actual BT controller type you are currently using. The labels selection is only to help you make the mapping selection and has no effect on the config otherwise.
 
