@@ -222,3 +222,20 @@ image:static/xbox_qr_code.png[]
 . Connect the BRX dongle into one of the controller slots.
 . Hold the BRX dongle button and simultaneously power on the Xbox console. Keep holding the button for around 8 seconds and then release it.
 . Once done, the dongle will reboot and the LED will be pulsing to indicate it's in Bluetooth paring mode.
+
+== Support BRX with linux's xpad driver
+
+. Disconnect BRX dongle from PC.
+. Create a file named `/etc/udev/rules.d/98-brx.rules` and add the following content to it:
++
+----
+ACTION=="add", ATTRS{idVendor}=="303A", ATTRS{idProduct}=="81EB", RUN+="/sbin/modprobe xpad" RUN+="/bin/sh -c 'echo 303A 81EB > /sys/bus/usb/drivers/xpad/new_id'"
+----
+
+. Run `sudo udevadm control --reload`
+. Connect adapter to PC. It should now be using the xpad driver.
+
+== Support BRX with MiSTerFPGA
+
+Follow the instructions in this repo:
+https://github.com/darthcloud/MiSTer_BRX
