@@ -1,12 +1,16 @@
 = BRX Dongle for OG XBOX documentation
 :toc: auto
 
-image::static/BRX_green_shadow_blk.png[]
+image::static/BRX_green_shadow_blk.png[width=246, align=center]
 
-== Original BlueRetro docs that apply to the BRX adapter
+== Pairing Bluetooth controller
 
-* https://github.com/darthcloud/BlueRetro/wiki#3---pairing-bluetooth-controller[3 - Pairing Bluetooth controller]
- ** https://github.com/darthcloud/BlueRetro/wiki/Controller-pairing-guide[Controller List & Pairing Guide]
+The BRX dongle is always in pairing mode (LED pulsing) if no controller is connected.
+On first use, put you controller in pairing mode (sometime called SYNC).
+On subsequent connection you can simply press any buttons or the power on button of the controller to automatically reconnect.
+
+Refer to this page for more detailled instruction for each controller type supported:
+https://github.com/darthcloud/BlueRetro/wiki/Controller-pairing-guide
 
 == BRX dongle default buttons mapping
 
@@ -76,6 +80,15 @@ image::static/BRX_green_shadow_blk.png[]
 
 |===
 
+== BRX dongle button usages
+
+After you powered the system on, you can use the button on the BRX dongle as follow:
+
+* Quick press: Bluetooth controller is disconnected from the BRX dongle.
+* 3 seconds press: The BRX dongle config is reset to default.
+
+<<<
+
 == BRX dongle virtual menu
 
 Your BRX dongle can be configured using a virtual menu operated by the connected controller.
@@ -105,6 +118,8 @@ Your BRX dongle can be configured using a virtual menu operated by the connected
 . Press the *button* or *axis direction* you want to change the action of. 
 . Press the *button* or *axis direction* whose action you want it to perform.
 . The BRX dongle will exit the menu automatically.
+
+<<<
 
 === Reverting a custom mapping bank to default
 
@@ -138,6 +153,8 @@ After each press the BRX dongle LED will flash accordingly to the currently set 
 . Press the ([green]#*B*# | [blue]#*O*# | [red]#*A*#) button of your controller to toggle BT pairing mode between enabled and disabled.
 . The BRX dongle will exit the menu automatically.
 
+<<<
+
 === Joysticks & Triggers neutral position calibration
 
 Only use this if your controller joysticks or triggers are off center due to wear.
@@ -147,7 +164,11 @@ Only use this if your controller joysticks or triggers are off center due to wea
 . Press the ([green]#*Y*# | [blue]#*Triangle*# | [red]#*X*#) button of your controller to calibrate the joysticks and triggers neutral position.
 . The BRX dongle will exit the menu automatically.
 
+<<<
+
 == Advance config via the BLE Web interface
+
+Only Chromium-based browser are supported (ex: Google Chrome).
 
 BRX dongle custom mappings can be configured via the BLE Web config. This interface allows you to configure a few extra settings from a phone or Bluetooth-capable PC.
 
@@ -171,12 +192,7 @@ If source is a button & destination is an axis, then this is the value based on 
 * Deadzone: This is the axis dead zone around the reset value.
 * Turbo: Turbo function based on the system frame rate.
 
-== BRX dongle button usages
-
-After you powered the system on, you can use the button on the BRX dongle as follow:
-
-* Quick press: Bluetooth controller is disconnected from the BRX dongle.
-* 3 seconds press: The BRX dongle config is reset to default.
+<<<
 
 == Firmware Update over Wi-Fi
 
@@ -195,43 +211,14 @@ image:static/xbox_qr_code.png[]
 . Once connected, the LED pattern will change to two quick ON blinks every second.
 . Once completed, the dongle will reboot and the LED will be pulsing to indicate it's in Bluetooth paring mode.
 
+== Updating the Wi-Fi configuration for FW update
+
+* After 5 failed Wi-Fi connection attempts, the Wi-Fi settings will be reset and will be reconfigurable via the Espressif app.
+* Alternatively, you can also factory reset the BRX adapter.
+
 == Factory reset
 
 . Turn your Xbox console off.
 . Connect the BRX dongle into one of the controller slots.
 . Hold the BRX dongle button and simultaneously power on the Xbox console. Keep holding the button for around 8 seconds and then release it.
 . Once done, the dongle will reboot and the LED will be pulsing to indicate it's in Bluetooth paring mode.
-
-== Updating the Wi-Fi configuration for FW update
-
-* After 5 failed Wi-Fi connection attempts, the Wi-Fi settings will be reset and will be reconfigurable via the Espressif app.
-* Alternatively, you can also factory reset the BRX adapter.
-
-== I don't want to/can't use either of the phone apps.
-
-It's possible to configure the Wi-Fi using a PC with Wi-Fi and a python script.
-
-*DOCS TBD*
-
-== I don't want to/can't let the dongle access the Internet
-
-It's possible to configure the Wi-Fi using a PC with Wi-Fi and a python script and to set a local web server.
-
-*DOCS TBD*
-
-== Support BRX with linux's xpad driver
-
-. Disconnect BRX dongle from PC.
-. Create a file named `/etc/udev/rules.d/98-brx.rules` and add the following content to it:
-+
-----
-ACTION=="add", ATTRS{idVendor}=="303A", ATTRS{idProduct}=="81EB", RUN+="/sbin/modprobe xpad" RUN+="/bin/sh -c 'echo 303A 81EB > /sys/bus/usb/drivers/xpad/new_id'"
-----
-
-. Run `sudo udevadm control --reload`
-. Connect adapter to PC. It should now be using the xpad driver.
-
-== Support BRX with MiSTerFPGA
-
-Follow the instructions in this repo:
-https://github.com/darthcloud/MiSTer_BRX
